@@ -11,43 +11,44 @@
     <div class="container">
 
         <div class="screen">
-            <div class="operation result">test result</div>
-            <div class="operation input">test_ _ _ _ _input - + / 1234</div>
+            <div class="operation result" id="output">test result</div>
+            <div class="operation input" id="input">test_ _ _ _ _input - + / 1234</div>
         </div>
 
         <div id="buttons-container">
 
             <div class="clear-container">
-                <button class="calculator-button undo-clear" id="delete">C</button>
-                <button class="calculator-button undo-clear" id="input-clear">AC</button>
-                <button class="calculator-button undo-clear" id="total-clear">DEL</button>
+                <button class="calculator-button undo-clear" id="delete" data-value="c" type="button">C</button>
+                <button class="calculator-button undo-clear" id="input-clear" data-value="ac" type="button">AC</button>
+                <button class="calculator-button undo-clear" id="total-clear" data-value="del" type="button">DEL</button>
             </div>
 
             <div class="operator-container">
-                <button class="calculator-button operator" id="add">+</button>
-                <button class="calculator-button operator" id="subtract">-</button>
-                <button class="calculator-button operator" id="multiply">x</button>
-                <button class="calculator-button operator" id="divide">/</button>
+                <button class="calculator-button operator" id="add" data-value="+" type="button">+</button>
+                <button class="calculator-button operator" id="subtract" data-value="-" type="button">-</button>
+                <button class="calculator-button operator" id="multiply" data-value="x" type="button">x</button>
+                <button class="calculator-button operator" id="divide" data-value="/" type="button">/</button>
             </div>
 
             <div class="numbers-container">
-                <button class="calculator-button" id="dot">7</button>
-                <button class="calculator-button number">8</button>
-                <button class="calculator-button number">9</button>
-                <button class="calculator-button number">4</button>
-                <button class="calculator-button number">5</button>
-                <button class="calculator-button number">6</button>
-                <button class="calculator-button number">1</button>
-                <button class="calculator-button number">2</button>
-                <button class="calculator-button number">3</button>
-                <button class="calculator-button number">0</button>
-                <button class="calculator-button number">.</button>
-                <button class="calculator-button" id="result">=</button>
+                <button class="calculator-button" id="dot" data-value="7" type="button">7</button>
+                <button class="calculator-button number" data-value="8" type="button">8</button>
+                <button class="calculator-button number" data-value="9" type="button">9</button>
+                <button class="calculator-button number" data-value="4" type="button">4</button>
+                <button class="calculator-button number" data-value="5" type="button">5</button>
+                <button class="calculator-button number" data-value="6" type="button">6</button>
+                <button class="calculator-button number" data-value="1" type="button">1</button>
+                <button class="calculator-button number" data-value="2" type="button">2</button>
+                <button class="calculator-button number" data-value="3" type="button">3</button>
+                <button class="calculator-button number" data-value="7" type="button">0</button>
+                <button class="calculator-button number" data-value="." type="button">.</button>
+                <button class="calculator-button" id="result" data-value="=" type="button">=</button>
             </div>
         </div>
 
     </div>
 
     <script src="javascript.js"></script>
+    
 </body>
 </html>
