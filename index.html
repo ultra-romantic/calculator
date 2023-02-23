@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculator</title>
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="screen">
+            <div class="operation result">test result</div>
+            <div class="operation input">test_ _ _ _ _input - + / 1234</div>
+        </div>
+
+        <div id="buttons-container">
+
+            <div class="clear-container">
+                <button class="calculator-button undo-clear" id="delete">C</button>
+                <button class="calculator-button undo-clear" id="input-clear">AC</button>
+                <button class="calculator-button undo-clear" id="total-clear">DEL</button>
+            </div>
+
+            <div class="operator-container">
+                <button class="calculator-button operator" id="add">+</button>
+                <button class="calculator-button operator" id="subtract">-</button>
+                <button class="calculator-button operator" id="multiply">x</button>
+                <button class="calculator-button operator" id="divide">/</button>
+            </div>
+
+            <div class="numbers-container">
+                <button class="calculator-button" id="dot">7</button>
+                <button class="calculator-button number">8</button>
+                <button class="calculator-button number">9</button>
+                <button class="calculator-button number">4</button>
+                <button class="calculator-button number">5</button>
+                <button class="calculator-button number">6</button>
+                <button class="calculator-button number">1</button>
+                <button class="calculator-button number">2</button>
+                <button class="calculator-button number">3</button>
+                <button class="calculator-button number">0</button>
+                <button class="calculator-button number">.</button>
+                <button class="calculator-button" id="result">=</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
