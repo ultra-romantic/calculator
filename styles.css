@@ -1,94 +1,41 @@
-*{
-    padding: 0;
-    margin: 0;
+*, *::before, *::after{
     box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body{
-    background-image: linear-gradient(rgb(223, 215, 194),rgb(163, 158, 138));
+    padding: 0;
+    margin: 0;
+    background-image: linear-gradient(rgb(230, 225, 213),rgb(143, 118, 39));
+}
+
+.calculator-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5,100px);
+}
+
+.calculator-grid > .screen-container{
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.container{
-    margin: 20px;
-    width: 420px;
-    height: 640px;
-    background-color: rgb(186, 186, 186);
-    border-radius: 5px;
-    box-shadow: 0 0 20px rgb(134, 130, 114);
-}
-
-.screen{
-    margin: 40px 20px;
-    padding: 10px;
-    width: 380px;
-    height: 110px;
-    background-color: rgb(89, 98, 76, 0.2);
-    border-radius: 10px;
-    box-shadow: 0 0 5px #393939 inset;
-}
-
-.operation{
-    text-align: end;
-    font-size: 50px;
-    padding-right: 10px;
-}
-
-.input{
-    font-size: 30px;
-}
-
-#buttons-container{
-    margin: 30px 0px;
-    height: 70%;
-    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
     flex-direction: column;
+    grid-column: 1 / -1;
+    background-color: rgb(0, 0, 0, .75);
+    color: white;
+    padding: 10px 25px;
 }
 
-.numbers-container{
-    margin: 5px;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap: 16px;
+.previous-operation{
+    font-size: 2em;
 }
 
-.operator-container{
-    margin: 5px;
-    display: flex;
-    justify-content: center;
+.calculator-grid > button {
+    cursor: pointer;
+    outline: none;
+    font-size: 1.5em;
 }
 
-.clear-container{
-    margin: 5px;
-    padding: 10px;
-    height: 10%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-
-.calculator-button{
-    height: 45px;
-    width: 80px;
-    margin: 10px;
-    border-radius: 50px;
-    box-shadow: 3px 3px 10px -1px rgba(53, 52, 49, 0.16),
-                -3px -3px 10px -1px rgba(53, 52, 49, 0.16);
-}
-
-.operator{
-    background-color: rgb(160, 99, 99);
-}
-
-.undo-clear{
-    height: 100%;
-    background-color: rgb(149, 149, 149);
-}
-
-button{
-    font-size: 20px;
+.span-2{
+    grid-column: span 2;
 }
