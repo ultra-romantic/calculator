@@ -3,52 +3,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="javascript.js" defer></script>
 </head>
 <body>
     
-    <div class="container">
+    <div class="calculator-container">
 
-        <div class="screen">
-            <div class="operation result" id="output">test result</div>
-            <div class="operation input" id="input">test_ _ _ _ _input - + / 1234</div>
+        <div class="screen-container">
+            <div class="operation input" id="input">_</div>
+            <div class="operation result" id="output">0</div>
         </div>
 
-        <div id="buttons-container">
-
-            <div class="clear-container">
-                <button class="calculator-button undo-clear" id="delete" data-value="c" type="button">C</button>
-                <button class="calculator-button undo-clear" id="input-clear" data-value="ac" type="button">AC</button>
-                <button class="calculator-button undo-clear" id="total-clear" data-value="del" type="button">DEL</button>
-            </div>
-
-            <div class="operator-container">
-                <button class="calculator-button operator" id="add" data-value="+" type="button">+</button>
-                <button class="calculator-button operator" id="subtract" data-value="-" type="button">-</button>
-                <button class="calculator-button operator" id="multiply" data-value="x" type="button">x</button>
-                <button class="calculator-button operator" id="divide" data-value="/" type="button">/</button>
-            </div>
-
-            <div class="numbers-container">
-                <button class="calculator-button" id="dot" data-value="7" type="button">7</button>
-                <button class="calculator-button number" data-value="8" type="button">8</button>
-                <button class="calculator-button number" data-value="9" type="button">9</button>
-                <button class="calculator-button number" data-value="4" type="button">4</button>
-                <button class="calculator-button number" data-value="5" type="button">5</button>
-                <button class="calculator-button number" data-value="6" type="button">6</button>
-                <button class="calculator-button number" data-value="1" type="button">1</button>
-                <button class="calculator-button number" data-value="2" type="button">2</button>
-                <button class="calculator-button number" data-value="3" type="button">3</button>
-                <button class="calculator-button number" data-value="7" type="button">0</button>
-                <button class="calculator-button number" data-value="." type="button">.</button>
-                <button class="calculator-button" id="result" data-value="=" type="button">=</button>
-            </div>
+        <div class="calculator-grid">
+                <button data-delete >DEL</button>
+                <button data-clear >AC</button>
+                <button data-operator class="operator">+</button>
+                <button data-operator class="operator">-</button>
+                <button data-operator class="operator">x</button>
+                <button data-operator class="operator">/</button>
+                <button data-number >7</button>
+                <button data-number >8</button>
+                <button data-number >9</button>
+                <button data-number >4</button>
+                <button data-number >5</button>
+                <button data-number >6</button>
+                <button data-number >1</button>
+                <button data-number >2</button>
+                <button data-number >3</button>
+                <button data-number >0</button>
+                <button data-number >.</button>
+                <button data-equal class="equal">=</button>
         </div>
-
     </div>
 
-    <script src="javascript.js"></script>
-    
 </body>
 </html>
