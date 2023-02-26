@@ -9,33 +9,32 @@
 </head>
 <body>
     
-    <div class="calculator-container">
+    <div class="calculator-grid">
 
         <div class="screen-container">
-            <div class="operation input" id="input">_</div>
-            <div class="operation result" id="output">0</div>
+            <div class="previous-operation">previous-operation</div>
+            <div class="current-operation">current-operation</div>
         </div>
-
-        <div class="calculator-grid">
-                <button data-delete >DEL</button>
-                <button data-clear >AC</button>
-                <button data-operator class="operator">+</button>
-                <button data-operator class="operator">-</button>
-                <button data-operator class="operator">x</button>
-                <button data-operator class="operator">/</button>
-                <button data-number >7</button>
-                <button data-number >8</button>
-                <button data-number >9</button>
-                <button data-number >4</button>
-                <button data-number >5</button>
-                <button data-number >6</button>
-                <button data-number >1</button>
-                <button data-number >2</button>
-                <button data-number >3</button>
-                <button data-number >0</button>
-                <button data-number >.</button>
-                <button data-equal class="equal">=</button>
-        </div>
+        
+        <button data-delete class="button-delete span-2">DEL</button>
+        <button data-clear class="button-all-clear" >AC</button>
+        <button data-operator class="button-operator">/</button>
+        <button data-number >7</button>
+        <button data-number >8</button>
+        <button data-number >9</button>
+        <button data-operator class="button-operator">*</button>
+        <button data-number >4</button>
+        <button data-number >5</button>
+        <button data-number >6</button>
+        <button data-operator class="button-operator">-</button>
+        <button data-number >1</button>
+        <button data-number >2</button>
+        <button data-number >3</button>
+        <button data-operator class="button-operator">+</button>
+        <button data-number >.</button>
+        <button data-number >0</button>
+        <button data-equal class="button-equal span-2" >=</button>
+        
     </div>
 
 </body>
